@@ -5,3 +5,9 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/shubhamtatvamasi/curl)](https://hub.docker.com/r/shubhamtatvamasi/curl)
 [![MicroBadger Layers (tag)](https://img.shields.io/microbadger/layers/shubhamtatvamasi/curl/latest)](https://hub.docker.com/r/shubhamtatvamasi/curl)
 [![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/shubhamtatvamasi/curl)](https://hub.docker.com/r/shubhamtatvamasi/curl)
+
+curl on the pod IP
+```bash
+kubectl run curl --image=shubhamtatvamasi/curl --restart=Never \
+  --rm -i -- curl -s 172-30-254-30.default.pod
+```
