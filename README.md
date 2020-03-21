@@ -14,9 +14,16 @@ kubectl run curl --image=shubhamtatvamasi/curl --restart=Never \
 ```
 > replace `.` in IP with `-` for running curl on pods
 ---
-curl the service
+curl the service with IP
 ```bash
 kubectl run curl --image=shubhamtatvamasi/curl --restart=Never \
   --rm -i -- curl -s 172.21.213.4
 ```
 > CLUSTER-IP is used within cluster access
+
+or user service name
+```bash
+kubectl run curl --image=shubhamtatvamasi/curl --restart=Never \
+  --rm -i -- curl -s nginx
+```
+
