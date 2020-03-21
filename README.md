@@ -11,3 +11,10 @@ curl on the pod IP
 kubectl run curl --image=shubhamtatvamasi/curl --restart=Never \
   --rm -i -- curl -s 172-30-254-30.default.pod
 ```
+> replace `.` in IP with `-` for running curl on pods
+
+curl the service
+```bash
+kubectl run curl --image=shubhamtatvamasi/curl --restart=Never \
+  --rm -i -- curl -s 172.21.213.4
+```
