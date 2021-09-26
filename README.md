@@ -7,6 +7,13 @@
 [![MicroBadger Layers (tag)](https://img.shields.io/microbadger/layers/shubhamtatvamasi/curl/latest)](https://hub.docker.com/r/shubhamtatvamasi/curl)
 [![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/shubhamtatvamasi/curl)](https://hub.docker.com/r/shubhamtatvamasi/curl)
 
+telnet to a port using curl:
+```bash
+curl -v telnet://$IP:$PORT
+```
+
+---
+
 curl on the pod IP
 ```bash
 kubectl run curl --image=shubhamtatvamasi/curl --restart=Never \
